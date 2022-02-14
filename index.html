@@ -45,7 +45,7 @@ blah, blah, blah, blah
 		
         }
 	// function to keep track of how many "yes" answers for cold
-        function coldAdd(){
+        function feelinganxiousAdd(){
 		//add 1 for feeling anxious when the right button is clicked
             feelinganxious_count = feelinganxious_count + 1;
         }
@@ -111,6 +111,21 @@ blah, blah, blah, blah
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
+	<!-- page one -->
+<div class="page" id="one">
+	<!-- page one header -->
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1>
+	</div>
+	<!-- page one, question one -->
+    	<div id="content" class="w3-container">
+        <p>Is your anxiety related to a specific problem or does it seem unexpected with no reasoning?</p>    
+    	</div>
+	<!-- two buttons, different answers, both should take you to page two -->
+	<!-- buttons also add 1 to var feelinganxious for specific problem, add 1 to var anxietydisorder for unexpected, no reason -->
+<a href="#two" onclick="feelinganxiousAdd();" class="w3-btn w3-black"> Specific Problem </a>
+<a href="#two" onclick="anxietydisorderAdd();" class="w3-btn w3-black"> Unexpected, No Reason </a>
+	</div>
       
 	   
 	   
