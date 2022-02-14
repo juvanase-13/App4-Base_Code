@@ -62,6 +62,55 @@ blah, blah, blah, blah
 	}
 	
 </script>
+
+/* formatting */
+	
+<style>	
+	.body {
+    		 margin: 0em;
+		}
+		
+		.page {
+   		width: 100vw;
+   	 	height: 100vh;
+   	 	position: fixed;
+    		top: 0;
+    		left: -100vw;
+    		overflow-y: auto;
+    		z-index: 0;
+    		background-color: hsl(0,0%,100%);
+		}
+
+  		.page:target {
+	    	left: 0vw;
+    		z-index: 1;
+		}
+	/* changed margin a bit */
+	.content{
+		margin:5%;
+		}
+</style>
+
+<body>
+	<!-- title page! -->
+<div id="header" class="w3-container w3-flat-carrot">
+	<!-- title page header -->
+	<h1>Cold or Allergies?</h1>
+</div>
+	
+<div id="content" class="w3-container">
+	<p> Do you want to know if you are just feeling a little anxious or have an anxiety disorder? Answer a few short questions to find out!</p>
+	
+	<!-- get started button -->
+	
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	
+	<!-- disclaimer -->
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+
       
 	   
 	   
