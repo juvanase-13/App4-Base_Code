@@ -23,9 +23,47 @@ Known Issues:
 blah, blah, blah, blah
 -->
 
-   <head> 
+  <head> 
+      <title>Hello World</title>  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="w3-colors-flat.css">
+   </head> 
+
+
+<script>
+	// variables to keep track of
+        var anxietydisorder_count = 0;
+        var feelinganxious_count = 0;
+	
+
+	// function to keep track of how many "yes" answers for anxiety disorder
+        function anxietydisorderAdd(){
+		//add 1 for anxiety disorder when the right button is clicked
+            anxietydisorder_count = anxietydisorder_count + 1;
+		
+        }
+	// function to keep track of how many "yes" answers for cold
+        function coldAdd(){
+		//add 1 for feeling anxious when the right button is clicked
+            feelinganxious_count = feelinganxious_count + 1;
+        }
+	// function to calculate percentage
+	function calcPercent() {
+		// variable that displays results
+		var resultText = document.getElementById("resultstext");
+		// variable calculating probability of feeling anxious (percentage)
+		var feelingPercent=feelinganxious_count/4*100;
+		// variable calculating probability of having an anxiety disorder (percentage)
+		var disorderPercent=anxietydisorder_count/4*100;
+		//text that shows results with percentage sign
+		resultText.innerHTML = "Chance that you may have an anxiety disorder =" + disorderPercent + "%<br> Chance that you are just feeling anxious =" + feelingPercent+"%";
+	}
+	
+</script>
       
-	   PUT YOUR OLD CODE IN HERE
+	   
 	   
    </body>
 </html>
